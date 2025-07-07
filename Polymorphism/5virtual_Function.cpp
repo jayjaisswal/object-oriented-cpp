@@ -21,9 +21,15 @@ class Child: public Parent {  // inherit Parent class member function
 
 int main() {
     
-    Parent *p = new Child();
+    Parent *p = new Child(); 
+
+    // another way to write       Parent *p = new Child();  is
+    //                             Child c;
+    //                             Parent *p = &c; 
+
     p->display(); // child call as parent p pointing to the child
     // So to make the things work just like in the real
     // world you have to declare virtual functions.
    
+    // this is runtie polymorphism
 }
