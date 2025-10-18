@@ -21,12 +21,15 @@ class Child : private Parent{ //by default private --> all members of base class
         cout<<y<<endl; //Protected member are accessible in Derived class
         cout<<z<<endl; //public member are accessible in Derived class
     }
+    
 
 };
 
 int main() {
     Child c;
     c.show(); // accessing via member function of derived class
+
+
 
     // c.x = 9; private inaccessible from obj
     // c.y = 10; protected inaccessible from obj
