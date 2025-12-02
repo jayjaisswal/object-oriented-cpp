@@ -15,7 +15,7 @@ class Test{
 
 };
 
-int Test::count = 0;
+int Test::count = 0;  // static data member must be defined outside the class
 
 int main() {
 
@@ -24,7 +24,7 @@ int main() {
     cout<<Test::count<<endl;  // we can access static data member using class name as well as object name
     // static has only one instance or copy that is shared in different object
 
-    Test t1, t2; // t1 and t2 has separate copy of vaiables
+    Test t1, t2, t3; // t1 and t2 has separate copy of vaiables
 
     cout<<t1.count<<endl; 
     cout<<t2.count<<endl;

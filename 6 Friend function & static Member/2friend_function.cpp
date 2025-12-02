@@ -21,10 +21,10 @@ private:
 void fun(){     
     A a;            
     a.publicVar = 1;  // access
-    a.protectedVar = 2;  // not accessible  we need to declare this function as friend inside class then only we can access
-    a.privateVar = 3;    // not accessible
-    cout<< "PrivateVar "<< a.privateVar<<endl;   // not accessible
-    cout<< "protectedVar "<< a.protectedVar<<endl;   // not accessible
+    a.protectedVar = 2; // access  
+    a.privateVar = 3;  // access   
+    cout<< "PrivateVar "<< a.privateVar<<endl;   //  accessible
+    cout<< "protectedVar "<< a.protectedVar<<endl;   //  accessible
     cout<< "PublicVar "<< a.publicVar<<endl; // access
 }
 

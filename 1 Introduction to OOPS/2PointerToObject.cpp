@@ -33,6 +33,15 @@ int main()
     r1.Area();
     (*p).Area();
 
+    Rectangle *p2 = new Rectangle();
+    p2->length = 15;
+    p2->breadth = 7;
+    // p2->Area();
+    
+    cout << "Area using p2: " << p2->length * p2->breadth << endl;
+     
+    delete p2; // free the memory allocated using new
+
 
     
     // there are wo ways to create object in cpp

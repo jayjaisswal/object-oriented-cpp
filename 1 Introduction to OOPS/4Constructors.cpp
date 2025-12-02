@@ -42,7 +42,9 @@ int main() {
     Rectangle r1; // default constructor
     Rectangle r2(10, 5); // parameterized constructor
     Rectangle r3(r2); // copy constructor
-    // or Rectangle r3 = r2; // copy constructor
+    // or
+    //  Rectangle r3 = r2; // copy constructor
+    
     r1.Area();
     r2.Area();
     r3.Area();

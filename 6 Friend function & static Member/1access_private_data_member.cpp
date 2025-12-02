@@ -28,7 +28,7 @@ public :            // public is used so that in main() we can use it
 
 int main()
 {
-    A a;
-    a.fun();
+    A aa;
+    aa.fun();
 
 }

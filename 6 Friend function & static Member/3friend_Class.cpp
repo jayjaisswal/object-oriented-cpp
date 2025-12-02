@@ -25,10 +25,10 @@ class B {
     // a.publicVar;  can access like this        
     void fun(){
         a.publicVar = 1; // access via member fun not directly a.publicVar
-        a.protectedVar = 2;  // not accessible  we need to declare this class as friend inside class A then only we can access
-        a.privateVar = 3;    // not accessible
-        cout<< "PrivateVar "<< a.privateVar<<endl;   // not accessible
-        cout<< "protectedVar "<< a.protectedVar<<endl;   // not accessible
+        a.protectedVar = 2;  
+        a.privateVar = 3;    
+        cout<< "PrivateVar "<< a.privateVar<<endl;   //  accessible
+        cout<< "protectedVar "<< a.protectedVar<<endl;   //  accessible
         cout<< "PublicVar "<< a.publicVar<<endl; // access
     }
 };
