@@ -4,7 +4,7 @@
 
 using namespace std;
 template<class T, class R>
-int add (T x, R y){
+T add (T x, R y){
     return x+y;
 }
 
